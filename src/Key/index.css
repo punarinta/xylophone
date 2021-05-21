@@ -1,0 +1,20 @@
+.key {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 6rem;
+    height: 20rem;
+}
+
+.key__name {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font: bold 2rem Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
