@@ -26,3 +26,8 @@
     height: 4rem;
     cursor: pointer;
 }
+
+.incoming-rows {
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+}

@@ -5,7 +5,7 @@ export default function KeySet (props) {
   return (
     <div className="key-set">
       {
-        ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C2'].map((name, i) => <Key key={i} name={name}/>)
+        ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C2'].map((name, i) => <Key key={i} name={name} full={true} />)
       }
     </div>
   )

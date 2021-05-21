@@ -18,13 +18,18 @@ export default function Key (props) {
     <div
       className="key"
       style={{
-        backgroundColor: colors[n],
-        borderColor: n === 'B' ? '#bbb' : 'transparent'
+        backgroundColor: props.empty ? 'transparent' : colors[n],
+        borderColor: n === 'B' && !props.empty ? '#bbb' : 'transparent',
+        height: props.full ? '16rem' : `${props.duration}rem`,
       }}
     >
-      <div className="key__name">
-        { n }
-      </div>
+      {
+        props.full ?
+          <div className="key__name">
+            { n }
+          </div>
+          : null
+      }
     </div>
   )
 }
