@@ -20,7 +20,8 @@ export default function Key (props) {
       style={{
         backgroundColor: props.empty ? 'transparent' : colors[n],
         borderColor: n === 'B' && !props.empty ? '#bbb' : 'transparent',
-        height: props.full ? '16rem' : `${props.duration}rem`,
+        height: props.full ? '8rem' : `${props.duration * 1}rem`,
+        margin: props.full ? 'auto' : `6px auto`
       }}
     >
       {

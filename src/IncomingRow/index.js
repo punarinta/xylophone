@@ -3,7 +3,7 @@ import Key from '../Key'
 
 export default function IncomingRow (props) {
   return (
-    <div className="incoming-key">
+    <div className="incoming-row">
       {
         ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C2'].map((name, i) =>
           <Key
