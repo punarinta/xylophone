@@ -14,7 +14,7 @@ export default function App () {
   const update = useRender()
 
   const onNotesChange = useCallback((v) => {
-    const text = v.target.value.trim()
+    const text = v.target.value.trim().replace('\n', ' ')
     const notes = text.split(' ').map(pair => pair.split('/'))
 
     setNotes(notes)
